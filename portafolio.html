@@ -2,58 +2,506 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio - Alan Varas</title>
-  <link rel="stylesheet" href="assets/estilos.css" />
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Portafolio de desarrollo de software de Alan Varas. Experiencia en Java, ADempiere, PostgreSQL, JasperReports y desarrollo Full Stack.">
+
+    <title>
+        Portafolio | Alan Varas
+    </title>
+
+    <link rel="stylesheet"
+          href="assets/estilos.css">
+
 </head>
 
 <body>
 
-  <!-- Barra de navegación -->
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="portafolio.html">Portafolio</a>
-  </nav>
 
-  <!-- Encabezado -->
-  <header id="Hero-Section">
-    <h1>Portafolio</h1>
-    <p>Algunos proyectos y trabajos que he realizado</p>
-  </header>
+    <!-- Navegación -->
+    <nav>
 
-  <!-- Galería de proyectos -->
-  <section id="Portafolio" class="galeria">
-    <div class="proyecto">
-      <img src="assets/img/desafiotienda.png" alt="Proyecto 1" />
-      <h3>Proyecto 1</h3>
-      <p>Se crea una página web de una tienda con temática libre usando CSS.</p>
-    </div>
+        <div class="nav-container">
 
-    <div class="proyecto">
-      <img src="assets/img/desafioiguana.png" alt="Proyecto 2" />
-      <h3>Proyecto 2</h3>
-      <p>Se replica la maqueta de una página web utilizando Flexbox.</p>
-    </div>
+            <a href="index.html"
+               class="nav-brand">
+                Alan Varas
+            </a>
 
-    <div class="proyecto">
-      <img src="assets/img/desafiobootstrap.png" alt="Proyecto 3" />
-      <h3>Proyecto 3</h3>
-      <p>Se replica la maqueta de una página web con Bootstrap y uso de tarjetas.</p>
-    </div>
+            <div class="nav-links">
 
-    <div class="proyecto">
-      <img src="assets/img/repositorio.png" alt="Curriculum Vitae Web" />
-      <h3>Proyecto 4</h3>
-      <p>Curriculum Vitae desarrollado con HTML y CSS, incluyendo sección de portafolio, experiencia, estudios y contacto.</p>
-      <a href="https://github.com/AlanMayron/curriculum-vitae" target="_blank">Ver repositorio</a>
-    </div>
-  </section>
+                <a href="index.html">
+                    Inicio
+                </a>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Alan Mayron Nolasco Varas Gatica. Todos los derechos reservados.</p>
-  </footer>
+                <a href="#Experiencia-tecnica">
+                    Experiencia técnica
+                </a>
+
+                <a href="#Proyectos-formacion">
+                    Proyectos
+                </a>
+
+                <a href="index.html#Contacto">
+                    Contacto
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Hero -->
+    <header id="Hero-Section">
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <span class="subtitle">
+                    Desarrollo de Software
+                </span>
+
+                <h1>
+                    Portafolio
+                </h1>
+
+                <h2>
+                    Proyectos y experiencia técnica
+                </h2>
+
+                <p class="hero-description">
+                    Una selección de tecnologías, soluciones y proyectos
+                    que representan mi experiencia profesional y mi
+                    formación como desarrollador.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="index.html"
+                       class="btn btn-primary">
+                        Volver al CV
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- Experiencia profesional -->
+    <section id="Experiencia-tecnica"
+             class="section section-white">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Experiencia técnica
+            </h2>
+
+            <p class="section-subtitle">
+                Áreas de desarrollo en las que he trabajado
+                profesionalmente.
+            </p>
+
+        </div>
+
+
+        <div class="galeria">
+
+
+            <!-- ERP -->
+
+            <article class="proyecto proyecto-profesional">
+
+                <div>
+
+                    <span class="project-category">
+                        Desarrollo ERP
+                    </span>
+
+                    <h3>
+                        Desarrollo con ADempiere
+                    </h3>
+
+                    <p>
+                        Desarrollo y mantenimiento de funcionalidades
+                        empresariales utilizando Java, ADempiere y
+                        PostgreSQL, incluyendo procesos, callouts,
+                        Model Validators y lógica de negocio.
+                    </p>
+
+                </div>
+
+                <div class="project-tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">ADempiere</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">Tomcat</span>
+                </div>
+
+            </article>
+
+
+            <!-- SQL -->
+
+            <article class="proyecto proyecto-profesional">
+
+                <div>
+
+                    <span class="project-category">
+                        Datos
+                    </span>
+
+                    <h3>
+                        SQL y PostgreSQL
+                    </h3>
+
+                    <p>
+                        Desarrollo y optimización de consultas,
+                        vistas y funciones SQL para análisis de datos,
+                        procesos empresariales y resolución de
+                        incidencias.
+                    </p>
+
+                </div>
+
+                <div class="project-tags">
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">DBeaver</span>
+                </div>
+
+            </article>
+
+
+            <!-- Jasper -->
+
+            <article class="proyecto proyecto-profesional">
+
+                <div>
+
+                    <span class="project-category">
+                        Reportería
+                    </span>
+
+                    <h3>
+                        JasperReports
+                    </h3>
+
+                    <p>
+                        Creación y modificación de reportes empresariales
+                        mediante JasperReports y JRXML, utilizando
+                        consultas SQL y parámetros dinámicos.
+                    </p>
+
+                </div>
+
+                <div class="project-tags">
+                    <span class="tag">JasperReports</span>
+                    <span class="tag">JRXML</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Jaspersoft Studio</span>
+                </div>
+
+            </article>
+
+
+            <!-- Importadores -->
+
+            <article class="proyecto proyecto-profesional">
+
+                <div>
+
+                    <span class="project-category">
+                        Integraciones
+                    </span>
+
+                    <h3>
+                        Importación de datos
+                    </h3>
+
+                    <p>
+                        Desarrollo y mantenimiento de procesos para
+                        carga e integración de información desde
+                        archivos Excel y XML hacia sistemas ERP.
+                    </p>
+
+                </div>
+
+                <div class="project-tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Excel</span>
+                    <span class="tag">XML</span>
+                    <span class="tag">PostgreSQL</span>
+                </div>
+
+            </article>
+
+
+            <!-- Laravel -->
+
+            <article class="proyecto proyecto-profesional">
+
+                <div>
+
+                    <span class="project-category">
+                        Desarrollo Web
+                    </span>
+
+                    <h3>
+                        PHP / Laravel
+                    </h3>
+
+                    <p>
+                        Mantenimiento y modificación de aplicaciones
+                        web empresariales desarrolladas con PHP y
+                        Laravel.
+                    </p>
+
+                </div>
+
+                <div class="project-tags">
+                    <span class="tag">PHP</span>
+                    <span class="tag">Laravel</span>
+                    <span class="tag">Git</span>
+                </div>
+
+            </article>
+
+
+            <!-- Full Stack -->
+
+            <article class="proyecto proyecto-profesional">
+
+                <div>
+
+                    <span class="project-category">
+                        Full Stack
+                    </span>
+
+                    <h3>
+                        Desarrollo de aplicaciones web
+                    </h3>
+
+                    <p>
+                        Formación en desarrollo de interfaces web,
+                        APIs REST y operaciones CRUD utilizando
+                        JavaScript, React, Node.js, Express y
+                        PostgreSQL.
+                    </p>
+
+                </div>
+
+                <div class="project-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Express</span>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- Proyectos de formación -->
+    <section id="Proyectos-formacion"
+             class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Proyectos de formación
+            </h2>
+
+            <p class="section-subtitle">
+                Algunos proyectos realizados durante mi proceso
+                de aprendizaje en desarrollo web.
+            </p>
+
+        </div>
+
+
+        <div class="galeria">
+
+
+            <article class="proyecto">
+
+                <img src="assets/img/desafiotienda.png"
+                     alt="Proyecto tienda HTML y CSS">
+
+                <div class="proyecto-content">
+
+                    <h3>
+                        Landing Page - Tienda
+                    </h3>
+
+                    <p>
+                        Desarrollo de una página web de una tienda
+                        utilizando HTML y CSS, aplicando estilos,
+                        estructura semántica y diseño visual.
+                    </p>
+
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="proyecto">
+
+                <img src="assets/img/desafioiguana.png"
+                     alt="Proyecto Iguana Page">
+
+                <div class="proyecto-content">
+
+                    <h3>
+                        Iguana Page
+                    </h3>
+
+                    <p>
+                        Replicación de una interfaz web utilizando
+                        Flexbox para distribución y alineación
+                        responsiva de elementos.
+                    </p>
+
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Flexbox</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="proyecto">
+
+                <img src="assets/img/desafiobootstrap.png"
+                     alt="Proyecto Bootstrap">
+
+                <div class="proyecto-content">
+
+                    <h3>
+                        Cuppon con Bootstrap
+                    </h3>
+
+                    <p>
+                        Desarrollo de una interfaz responsiva
+                        mediante Bootstrap utilizando sistema
+                        de grillas y componentes tipo card.
+                    </p>
+
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Bootstrap</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="proyecto">
+
+                <img src="assets/img/repositorio.png"
+                     alt="Curriculum Vitae Web">
+
+                <div class="proyecto-content">
+
+                    <h3>
+                        Curriculum Vitae Web
+                    </h3>
+
+                    <p>
+                        Sitio web personal desarrollado para presentar
+                        mi experiencia profesional, tecnologías,
+                        educación y portafolio.
+                    </p>
+
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">GitHub Pages</span>
+                    </div>
+
+                    <a href="https://github.com/AlanMayron/curriculum-vitae"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="project-link">
+
+                        Ver repositorio →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contacto -->
+    <section id="Contacto">
+
+        <h2>
+            ¿Quieres conocer más?
+        </h2>
+
+        <p>
+            Puedes revisar mis repositorios o contactarme
+            directamente.
+        </p>
+
+        <div class="contact-links">
+
+            <a href="mailto:Alan.varasg@gmail.com"
+               class="contact-link">
+                Email
+            </a>
+
+            <a href="https://github.com/AlanMayron"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact-link">
+                GitHub
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Alan Mayron Nolasco Varas Gatica.
+            Todos los derechos reservados.
+        </p>
+
+    </footer>
 
 </body>
 
