@@ -1,33 +1,34 @@
-/* ==========================================================
-   ALAN VARAS - CURRICULUM WEB
-   Diseño inspirado en el CV profesional
-   ========================================================== */
+/* =========================================================
+   ALAN VARAS — CV WEB
+   ========================================================= */
 
 :root {
-    /* Paleta principal */
-    --primary: #4f8fc7;
-    --primary-dark: #2f6fa8;
-    --primary-soft: #edf5fb;
+    --blue-dark: #17324d;
+    --blue-main: #397db5;
+    --blue-cv: #5a9ad5;
+    --blue-light: #eaf3fa;
 
-    /* Neutros */
-    --text-main: #1f2933;
-    --text-secondary: #52606d;
-    --text-muted: #7b8794;
+    --text: #202833;
+    --text-secondary: #596675;
+    --text-muted: #7a8794;
 
-    --background: #f5f7f9;
+    --background: #f4f7f9;
     --surface: #ffffff;
 
-    --border: #d8e1e8;
-    --border-strong: #b7c9d8;
+    --border: #dbe4ea;
 
-    /* Layout */
-    --container: 1120px;
+    --shadow:
+        0 1px 2px rgba(23, 50, 77, 0.03),
+        0 8px 28px rgba(23, 50, 77, 0.06);
+
+    --radius: 14px;
+    --container: 1140px;
 }
 
 
-/* ==========================================================
-   RESET
-   ========================================================== */
+/* =========================================================
+   BASE
+   ========================================================= */
 
 * {
     box-sizing: border-box;
@@ -42,51 +43,47 @@ body {
 
     font-family:
         "Segoe UI",
-        Inter,
         Arial,
         Helvetica,
         sans-serif;
 
     background-color: var(--background);
-    color: var(--text-main);
+    color: var(--text);
 
     line-height: 1.65;
 
     -webkit-font-smoothing: antialiased;
 }
 
+a {
+    color: inherit;
+}
 
-/* ==========================================================
-   CONTENEDOR
-   ========================================================== */
-
-.container {
-    width: min(92%, var(--container));
-    margin: 0 auto;
+section {
+    scroll-margin-top: 95px;
 }
 
 
-/* ==========================================================
+/* =========================================================
    NAVEGACIÓN
-   ========================================================== */
+   ========================================================= */
 
 nav {
     position: sticky;
     top: 0;
     z-index: 1000;
 
-    background-color: rgba(255, 255, 255, 0.97);
+    background-color: rgba(255, 255, 255, 0.96);
 
     border-bottom: 1px solid var(--border);
 
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
 }
-
 
 .nav-container {
     width: min(92%, var(--container));
 
-    min-height: 68px;
+    min-height: 70px;
 
     margin: 0 auto;
 
@@ -95,33 +92,30 @@ nav {
     justify-content: space-between;
 }
 
-
 .nav-brand {
-    color: var(--primary-dark);
+    color: var(--blue-dark);
 
-    font-size: 1.08rem;
+    font-size: 1.05rem;
     font-weight: 700;
 
-    letter-spacing: 0.2px;
-
     text-decoration: none;
-}
 
+    letter-spacing: 0.2px;
+}
 
 .nav-links {
     display: flex;
     align-items: center;
 
-    gap: 28px;
+    gap: 27px;
 }
-
 
 .nav-links a {
     position: relative;
 
     color: var(--text-secondary);
 
-    font-size: 0.91rem;
+    font-size: 0.9rem;
     font-weight: 600;
 
     text-decoration: none;
@@ -129,11 +123,9 @@ nav {
     transition: color 0.2s ease;
 }
 
-
 .nav-links a:hover {
-    color: var(--primary-dark);
+    color: var(--blue-main);
 }
-
 
 .nav-links a::after {
     content: "";
@@ -141,213 +133,181 @@ nav {
     position: absolute;
 
     left: 0;
-    bottom: -7px;
+    bottom: -8px;
 
     width: 0;
     height: 2px;
 
-    background-color: var(--primary);
+    background-color: var(--blue-cv);
 
     transition: width 0.2s ease;
 }
-
 
 .nav-links a:hover::after {
     width: 100%;
 }
 
 
-/* ==========================================================
-   HERO / CABECERA
-   ========================================================== */
+/* =========================================================
+   HERO
+   ========================================================= */
 
 #Hero-Section {
     width: min(92%, var(--container));
 
-    margin: 42px auto 30px;
+    margin: 38px auto 34px;
 
-    padding: 42px 46px;
+    padding: 54px 58px;
 
-    background-color: var(--surface);
+    background-color: var(--blue-dark);
 
-    border-top: 5px solid var(--primary);
+    border-radius: var(--radius);
 
-    box-shadow:
-        0 1px 2px rgba(31, 41, 51, 0.04),
-        0 8px 24px rgba(31, 41, 51, 0.05);
+    box-shadow: var(--shadow);
 }
-
 
 .hero-text {
-    max-width: 900px;
+    max-width: 920px;
 }
 
+.hero-text h1 {
+    margin: 0 0 9px;
 
-.hero-text h1,
-#Hero-Section h1 {
-    margin: 0 0 8px;
+    color: white;
 
-    color: var(--primary-dark);
-
-    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-size: clamp(2.2rem, 4vw, 3.25rem);
     font-weight: 700;
 
-    line-height: 1.15;
-
-    letter-spacing: -0.5px;
+    letter-spacing: -1px;
+    line-height: 1.12;
 }
 
+.hero-text h2 {
+    margin: 0 0 25px;
 
-.hero-text h2,
-#Hero-Section h2 {
-    margin: 0 0 24px;
+    color: #a9cdea;
 
-    color: var(--text-main);
-
-    font-size: 1.22rem;
-    font-weight: 600;
+    font-size: 1.25rem;
+    font-weight: 500;
 }
 
-
-.hero-text p,
-#Hero-Section p {
-    max-width: 880px;
+.hero-text p {
+    max-width: 850px;
 
     margin: 0 0 10px;
 
-    color: var(--text-secondary);
+    color: #e2ebf2;
 
     font-size: 1rem;
 }
-
 
 .hero-text p:last-child {
     margin-bottom: 0;
 }
 
 
-/* ==========================================================
+/* =========================================================
    SECCIONES
-   ========================================================== */
+   ========================================================= */
 
-.section,
-#Acerca-de-mi,
-#Experiencia,
-#Tecnologias,
-#Mis-estudios,
-#Certificaciones,
-#Contacto {
+.section {
     width: min(92%, var(--container));
 
-    margin: 0 auto 28px;
+    margin: 0 auto 34px;
 }
 
-
-.section-title,
-#Acerca-de-mi > h2,
-#Experiencia > h2,
-#Tecnologias > h2,
-#Mis-estudios > h2,
-#Certificaciones > h2,
-#Contacto > h2 {
+.section-title {
     position: relative;
 
     margin: 0 0 14px;
 
-    padding-left: 16px;
+    padding-left: 15px;
 
-    color: var(--primary-dark);
+    color: var(--blue-dark);
 
-    font-size: 1.22rem;
+    font-size: 1.27rem;
     font-weight: 700;
-
-    letter-spacing: 0.1px;
 }
 
-
-.section-title::before,
-#Acerca-de-mi > h2::before,
-#Experiencia > h2::before,
-#Tecnologias > h2::before,
-#Mis-estudios > h2::before,
-#Certificaciones > h2::before,
-#Contacto > h2::before {
+.section-title::before {
     content: "";
 
     position: absolute;
 
     left: 0;
-    top: 3px;
+    top: 4px;
 
     width: 4px;
-    height: calc(100% - 6px);
+    height: calc(100% - 8px);
 
-    background-color: var(--primary);
+    background-color: var(--blue-cv);
+
+    border-radius: 3px;
 }
 
 
-/* Caja general de sección */
+/* =========================================================
+   PERFIL
+   ========================================================= */
 
-.section-content,
-.about-content,
-.experience-list,
-.skills-grid,
-.education-grid,
-.certifications-list,
-.contact-content {
+.about-content {
+    padding: 30px 34px;
+
     background-color: var(--surface);
 
     border: 1px solid var(--border);
+    border-radius: var(--radius);
 
-    padding: 30px 34px;
+    box-shadow: var(--shadow);
 }
-
-
-/* ==========================================================
-   ACERCA DE MÍ
-   ========================================================== */
-
-.about-content {
-    color: var(--text-secondary);
-
-    font-size: 1rem;
-}
-
 
 .about-content p {
-    margin: 0 0 12px;
-}
+    max-width: 950px;
 
+    margin: 0 0 12px;
+
+    color: var(--text-secondary);
+}
 
 .about-content p:last-child {
     margin-bottom: 0;
 }
 
 
-/* ==========================================================
-   EXPERIENCIA
-   ========================================================== */
+/* =========================================================
+   EXPERIENCIA PRINCIPAL
+   ========================================================= */
 
 .experience-list {
-    padding: 0;
-}
-
-
-.experience-card {
-    padding: 30px 34px;
+    overflow: hidden;
 
     background-color: var(--surface);
 
-    border: none;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
 
-    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow);
 }
 
+.experience-card {
+    position: relative;
 
-.experience-card:last-child {
-    border-bottom: none;
+    padding: 32px 36px;
 }
 
+.experience-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 4px;
+
+    background-color: var(--blue-cv);
+}
 
 .experience-header {
     display: grid;
@@ -356,67 +316,72 @@ nav {
 
     gap: 28px;
 
-    margin-bottom: 14px;
+    align-items: start;
 }
-
 
 .experience-date {
+    padding-top: 2px;
+
     color: var(--text-muted);
 
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     font-weight: 600;
 }
-
 
 .experience-info h3 {
-    margin: 0 0 3px;
+    margin: 0 0 2px;
 
-    color: var(--text-main);
+    color: var(--text);
 
-    font-size: 1.08rem;
-    font-weight: 700;
+    font-size: 1.12rem;
 }
-
 
 .company {
-    color: var(--primary-dark);
+    color: var(--blue-main);
 
-    font-size: 0.96rem;
-    font-weight: 600;
+    font-size: 0.95rem;
+    font-weight: 650;
 }
-
 
 .experience-card ul {
-    margin: 18px 0 0 218px;
+    margin: 20px 0 0 218px;
 
-    padding-left: 18px;
+    padding-left: 17px;
 }
-
 
 .experience-card li {
     margin-bottom: 8px;
 
     color: var(--text-secondary);
 
-    font-size: 0.96rem;
+    font-size: 0.95rem;
 }
 
+.experience-card li:last-child {
+    margin-bottom: 0;
+}
 
 .experience-card li::marker {
-    color: var(--primary);
+    color: var(--blue-cv);
 }
 
 
-/* ==========================================================
-   EXPERIENCIA SECUNDARIA
-   ========================================================== */
+/* =========================================================
+   EXPERIENCIA ANTERIOR
+   ========================================================= */
 
 .secondary-experience {
+    overflow: hidden;
+
+    margin-top: 14px;
+
     background-color: var(--surface);
 
     border: 1px solid var(--border);
-}
+    border-radius: var(--radius);
 
+    box-shadow: var(--shadow);
+}
 
 .small-card {
     display: grid;
@@ -425,79 +390,75 @@ nav {
 
     gap: 28px;
 
-    padding: 22px 34px;
+    padding: 21px 34px;
 
     border-bottom: 1px solid var(--border);
 }
 
-
 .small-card:last-child {
-    border-bottom: none;
+    border-bottom: 0;
 }
-
 
 .small-card .date {
     color: var(--text-muted);
 
-    font-size: 0.9rem;
+    font-size: 0.87rem;
     font-weight: 600;
 }
 
-
 .small-card h3 {
-    margin: 0 0 3px;
+    margin: 0 0 2px;
 
-    color: var(--text-main);
+    color: var(--text);
 
-    font-size: 1rem;
+    font-size: 0.98rem;
 }
 
-
 .small-card p {
-    margin: 9px 0 0;
+    margin: 7px 0 0;
 
     color: var(--text-secondary);
 
-    font-size: 0.94rem;
+    font-size: 0.9rem;
 }
 
 
-/* ==========================================================
+/* =========================================================
    TECNOLOGÍAS
-   ========================================================== */
+   ========================================================= */
 
 .skills-grid {
     display: grid;
 
     grid-template-columns: repeat(4, 1fr);
 
-    gap: 0;
-
-    padding: 0;
+    gap: 14px;
 }
-
 
 .skill-card {
-    padding: 26px 28px;
+    min-height: 205px;
 
-    border-right: 1px solid var(--border);
+    padding: 25px 25px;
+
+    background-color: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
 }
-
-
-.skill-card:last-child {
-    border-right: none;
-}
-
 
 .skill-card h3 {
-    margin: 0 0 14px;
+    margin: 0 0 17px;
 
-    color: var(--primary-dark);
+    padding-bottom: 11px;
 
-    font-size: 0.98rem;
-    font-weight: 700;
+    color: var(--blue-dark);
+
+    font-size: 0.97rem;
+
+    border-bottom: 2px solid var(--blue-light);
 }
-
 
 .tags {
     display: flex;
@@ -506,17 +467,15 @@ nav {
     gap: 7px;
 }
 
-
 .tag {
     position: relative;
 
-    padding-left: 14px;
+    padding-left: 15px;
 
     color: var(--text-secondary);
 
-    font-size: 0.92rem;
+    font-size: 0.91rem;
 }
-
 
 .tag::before {
     content: "";
@@ -529,22 +488,26 @@ nav {
     width: 5px;
     height: 5px;
 
-    background-color: var(--primary);
+    background-color: var(--blue-cv);
 
     border-radius: 50%;
 }
 
 
-/* ==========================================================
+/* =========================================================
    EDUCACIÓN
-   ========================================================== */
+   ========================================================= */
 
 .education-grid {
-    display: block;
+    overflow: hidden;
 
-    padding: 0;
+    background-color: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
 }
-
 
 .education-card {
     display: grid;
@@ -553,69 +516,66 @@ nav {
 
     gap: 28px;
 
-    padding: 24px 34px;
+    padding: 23px 34px;
 
     border-bottom: 1px solid var(--border);
 }
 
-
 .education-card:last-child {
-    border-bottom: none;
+    border-bottom: 0;
 }
-
 
 .education-card .date {
     color: var(--text-muted);
 
-    font-size: 0.9rem;
+    font-size: 0.87rem;
     font-weight: 600;
 }
 
-
 .education-card h3 {
-    margin: 0 0 3px;
+    margin: 0 0 1px;
 
-    color: var(--text-main);
-
-    font-size: 1rem;
+    font-size: 0.99rem;
 }
-
 
 .education-card .institution {
     margin: 0;
 
-    color: var(--primary-dark);
+    color: var(--blue-main);
 
-    font-size: 0.94rem;
+    font-size: 0.91rem;
     font-weight: 600;
 }
 
 
-/* ==========================================================
+/* =========================================================
    CERTIFICACIONES
-   ========================================================== */
+   ========================================================= */
 
 .certifications-list {
     display: grid;
 
     grid-template-columns: repeat(2, 1fr);
 
-    gap: 0;
+    padding: 18px 30px;
 
-    padding: 10px 34px;
+    background-color: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
 }
-
 
 .certification-item {
     position: relative;
 
-    padding: 10px 20px 10px 18px;
+    padding: 9px 20px 9px 18px;
 
     color: var(--text-secondary);
 
-    font-size: 0.94rem;
+    font-size: 0.91rem;
 }
-
 
 .certification-item::before {
     content: "";
@@ -623,165 +583,156 @@ nav {
     position: absolute;
 
     left: 0;
-    top: 19px;
+    top: 18px;
 
     width: 5px;
     height: 5px;
 
-    background-color: var(--primary);
+    background-color: var(--blue-cv);
 
     border-radius: 50%;
 }
 
 
-/* ==========================================================
+/* =========================================================
    CONTACTO
-   ========================================================== */
+   ========================================================= */
 
 #Contacto {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
 }
-
 
 .contact-content {
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
 
-    gap: 0;
+    overflow: hidden;
 
-    padding: 0;
+    background-color: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
 }
 
-
 .contact-item {
-    padding: 22px 28px;
+    padding: 25px 28px;
 
     border-right: 1px solid var(--border);
 }
 
-
 .contact-item:last-child {
-    border-right: none;
+    border-right: 0;
 }
-
 
 .contact-label {
     display: block;
 
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 
     color: var(--text-muted);
 
-    font-size: 0.77rem;
+    font-size: 0.72rem;
     font-weight: 700;
 
     text-transform: uppercase;
-
-    letter-spacing: 0.7px;
+    letter-spacing: 0.8px;
 }
-
 
 .contact-item a,
 .contact-item span {
-    color: var(--text-main);
+    color: var(--text);
 
-    font-size: 0.93rem;
+    font-size: 0.92rem;
 
     text-decoration: none;
 }
 
-
 .contact-item a:hover {
-    color: var(--primary-dark);
-
-    text-decoration: underline;
+    color: var(--blue-main);
 }
 
 
-/* ==========================================================
-   LINKS GENERALES
-   ========================================================== */
+/* =========================================================
+   INTERACCIÓN SUTIL
+   ========================================================= */
 
-a {
-    transition: color 0.2s ease;
+.skill-card,
+.about-content,
+.experience-list,
+.secondary-experience,
+.education-grid,
+.certifications-list,
+.contact-content {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
+.skill-card:hover {
+    transform: translateY(-3px);
 
-/* ==========================================================
-   SELECCIÓN DE TEXTO
-   ========================================================== */
+    box-shadow:
+        0 1px 2px rgba(23, 50, 77, 0.04),
+        0 12px 32px rgba(23, 50, 77, 0.09);
+}
 
 ::selection {
-    background-color: var(--primary-soft);
-    color: var(--primary-dark);
+    background-color: var(--blue-light);
+    color: var(--blue-dark);
 }
 
 
-/* ==========================================================
-   RESPONSIVE TABLET
-   ========================================================== */
+/* =========================================================
+   TABLET
+   ========================================================= */
 
 @media (max-width: 900px) {
 
     .nav-container {
         flex-direction: column;
 
-        padding: 15px 0;
+        padding: 14px 0;
     }
 
-
     .nav-links {
-        margin-top: 12px;
+        margin-top: 10px;
 
         flex-wrap: wrap;
         justify-content: center;
 
-        gap: 14px 20px;
+        gap: 13px 20px;
     }
-
 
     #Hero-Section {
-        padding: 34px;
+        padding: 42px 38px;
     }
-
 
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-
-    .skill-card:nth-child(2) {
-        border-right: none;
-    }
-
-
-    .skill-card:nth-child(-n + 2) {
-        border-bottom: 1px solid var(--border);
-    }
-
-
     .contact-content {
         grid-template-columns: 1fr;
     }
 
-
     .contact-item {
-        border-right: none;
+        border-right: 0;
         border-bottom: 1px solid var(--border);
     }
 
-
     .contact-item:last-child {
-        border-bottom: none;
+        border-bottom: 0;
     }
 
 }
 
 
-/* ==========================================================
-   RESPONSIVE MÓVIL
-   ========================================================== */
+/* =========================================================
+   MÓVIL
+   ========================================================= */
 
 @media (max-width: 650px) {
 
@@ -789,45 +740,45 @@ a {
         font-size: 15px;
     }
 
+    .nav-brand {
+        font-size: 1rem;
+    }
 
     #Hero-Section {
         width: 94%;
 
-        margin-top: 24px;
+        margin-top: 22px;
 
-        padding: 26px 22px;
+        padding: 31px 25px;
+
+        border-radius: 10px;
     }
 
+    .hero-text h1 {
+        font-size: 1.9rem;
 
-    .hero-text h1,
-    #Hero-Section h1 {
-        font-size: 1.85rem;
+        letter-spacing: -0.4px;
     }
 
-
-    .hero-text h2,
-    #Hero-Section h2 {
+    .hero-text h2 {
         font-size: 1.05rem;
     }
 
-
-    .section,
-    #Acerca-de-mi,
-    #Experiencia,
-    #Tecnologias,
-    #Mis-estudios,
-    #Certificaciones,
-    #Contacto {
+    .section {
         width: 94%;
     }
 
+    .about-content,
+    .experience-card,
+    .education-card {
+        padding: 24px;
+    }
 
     .experience-header,
     .small-card,
     .education-card {
         display: block;
     }
-
 
     .experience-date,
     .small-card .date,
@@ -837,30 +788,30 @@ a {
         margin-bottom: 7px;
     }
 
-
     .experience-card ul {
         margin-left: 0;
+
+        margin-top: 17px;
     }
 
+    .small-card {
+        padding: 20px 24px;
+    }
 
     .skills-grid {
         grid-template-columns: 1fr;
-    }
 
+        gap: 10px;
+    }
 
     .skill-card {
-        border-right: none;
-        border-bottom: 1px solid var(--border);
+        min-height: auto;
     }
-
-
-    .skill-card:last-child {
-        border-bottom: none;
-    }
-
 
     .certifications-list {
         grid-template-columns: 1fr;
+
+        padding: 15px 24px;
     }
 
 }
