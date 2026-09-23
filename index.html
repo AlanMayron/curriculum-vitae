@@ -2,111 +2,478 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mariela Lagos Gonzalez</title>
-  <link rel="stylesheet" href="assets/estilos.css">
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Portafolio profesional de Alan Varas, Desarrollador ERP y Full Stack con experiencia en Java, ADempiere, PostgreSQL, JasperReports, PHP y Laravel.">
+
+    <title>Alan Varas | Desarrollador ERP / Full Stack</title>
+
+    <link rel="stylesheet"
+          href="assets/estilos.css">
 </head>
 
 <body>
 
-  <!-- Barra de navegación -->
-  <nav>
-    <a href="#Acerca-de-mi">Acerca de mí</a>
-    <a href="#Mis-estudios">Mis estudios</a>
-    <a href="#Mis-trabajos">Mis trabajos</a>
-    <a href="portafolio.html">Portafolio</a>
-    <a href="#Contacto">Contacto</a>    
-  </nav>
+    <!-- Navegación -->
+    <nav>
+        <div class="nav-container">
 
-  <!-- Sección principal -->
-  <header id="Hero-Section">
-    <div class="container">
-      <h1>Alan Mayron Nolasco Varas Gatica</h1>
-      <img src="assets/img/mi-foto.jpg" alt="Foto de Alan" class="foto-perfil">
-      <p>Tecnólogo en informática biomédica</p>
-    </div>
-  </header>
+            <a href="#Hero-Section"
+               class="nav-brand">
+                Alan Varas
+            </a>
 
-  <!-- Acerca de mí -->
-  <section id="Acerca-de-mi">
-    <h2>Acerca de mí</h2>
-    <p>
-      Tecnólogo en Informática Biomédica, actualmente en formación como Desarrollador Full Stack. Con conocimientos en
-      análisis de datos, soporte técnico y desarrollo de soluciones tecnológicas. Motivado por seguir aprendiendo y
-      aplicar mis habilidades en proyectos del área tecnológica y de la salud.
-    </p>
-  </section>
+            <div class="nav-links">
+                <a href="#Acerca-de-mi">Acerca de mí</a>
+                <a href="#Experiencia">Experiencia</a>
+                <a href="#Tecnologias">Tecnologías</a>
+                <a href="#Mis-estudios">Educación</a>
+                <a href="portafolio.html">Portafolio</a>
+                <a href="#Contacto">Contacto</a>
+            </div>
 
-  <!-- Mis estudios -->
-  <section id="Mis-estudios">
-    <h2>Mis estudios</h2>
-    <div class="row">
-      <div class="column">
-        <h3>Dibujo Técnico</h3>
-        <p>Liceo Industrial Italia</p>
-      </div>
-      <div class="column">
-        <h3>Tecnólogo en informática biomédica</h3>
-        <p>Duoc UC</p>
-      </div>
-      <div class="column">
-        <h3>Desarrollador Full-stack</h3>
-        <p>Bootcamp DesafioLATAM</p>
-      </div>
-    </div>
-  </section>
+        </div>
+    </nav>
 
-  <!-- Experiencia Laboral -->
-  <section id="Mis-trabajos">
-    <h2>Experiencia Laboral</h2>
-    <div class="row">
-      <div class="column">
-        <h3>Vendedor Reponedor</h3>
-        <p><strong>Jumbo La Florida</strong><br>Marzo 2014 - Febrero 2015</p>
-      </div>
-      <div class="column">
-        <h3>Vendedor Coordinador</h3>
-        <p><strong>Gamesol Spa</strong><br>Marzo 2016 - Marzo 2018</p>
-      </div>
-      <div class="column">
-        <h3>Practicante</h3>
-        <p><strong>Mutual de Seguridad</strong><br>Agosto 2019 - Diciembre 2019<br>
-          • Desarrollo de informes y presentaciones basados en datos recopilados.</p>
-      </div>
-      <div class="column">
-        <h3>Soporte Técnico</h3>
-        <p><strong>Sináptica SA</strong><br>Febrero 2020 - Mayo 2020<br>
-          • Atención al cliente y resolución de problemas técnicos para bots de mensajería.</p>
-      </div>
-      <div class="column">
-        <h3>Ejecutivo de Ventas</h3>
-        <p><strong>Claro Chile</strong><br>Enero 2025</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- Contacto -->
-  <section id="Contacto">
-    <h2>Contáctame</h2>
-    <form>
-      <label for="nombre">Nombre</label>
-      <input type="text" id="nombre" placeholder="Nombre" required>
+    <!-- Hero -->
+    <header id="Hero-Section">
 
-      <label for="correo">Correo electrónico</label>
-      <input type="email" id="correo" placeholder="Correo electrónico" required>
+        <div class="hero-content">
 
-      <label for="mensaje">Mensaje</label>
-      <textarea id="mensaje" placeholder="Escribe aquí tu mensaje" required></textarea>
+            <img src="assets/img/mi-foto.jpg"
+                 alt="Alan Varas"
+                 class="foto-perfil">
 
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+            <div class="hero-text">
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Alan Mayron Nolasco Varas Gatica. Todos los derechos reservados.</p>
-  </footer>
+                <span class="subtitle">
+                    Desarrollo de Software
+                </span>
+
+                <h1>
+                    Alan Mayron Nolasco Varas Gatica
+                </h1>
+
+                <h2>
+                    Desarrollador ERP / Full Stack
+                </h2>
+
+                <p class="hero-description">
+                    Desarrollador con formación en Informática Biomédica
+                    y experiencia profesional en desarrollo y mantenimiento
+                    de soluciones ERP, utilizando Java, ADempiere,
+                    PostgreSQL, SQL, JasperReports y tecnologías web.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="portafolio.html"
+                       class="btn btn-primary">
+                        Ver portafolio
+                    </a>
+
+                    <a href="#Contacto"
+                       class="btn btn-outline">
+                        Contacto
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- Acerca de mí -->
+    <section id="Acerca-de-mi"
+             class="section section-white">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Acerca de mí
+            </h2>
+
+            <p class="section-subtitle">
+                Desarrollo, análisis y resolución de problemas
+                en sistemas empresariales.
+            </p>
+
+            <div class="about-content">
+
+                <p>
+                    Soy Tecnólogo en Informática Biomédica y Desarrollador
+                    Full Stack, actualmente desempeñándome profesionalmente
+                    como Desarrollador ERP.
+                </p>
+
+                <p>
+                    Tengo experiencia en desarrollo y mantenimiento de
+                    soluciones empresariales utilizando Java, ADempiere
+                    y PostgreSQL, además de implementación de procesos,
+                    lógica de negocio, consultas SQL, reportes y resolución
+                    de incidencias en ambientes DEV, QA y Producción.
+                </p>
+
+                <p>
+                    Complemento mi experiencia profesional con conocimientos
+                    en desarrollo web utilizando JavaScript, React, Node.js,
+                    Express, PHP y Laravel.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Experiencia -->
+    <section id="Experiencia"
+             class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Experiencia profesional
+            </h2>
+
+            <p class="section-subtitle">
+                Experiencia en desarrollo de software,
+                soporte y resolución de problemas.
+            </p>
+
+
+            <!-- Experiencia principal -->
+
+            <div class="experience-list">
+
+                <article class="experience-card">
+
+                    <div class="experience-header">
+
+                        <div>
+                            <h3>Desarrollador ERP</h3>
+                            <span class="company">
+                                Gesnova SA
+                            </span>
+                        </div>
+
+                        <span class="date">
+                            Junio 2025 - Presente
+                        </span>
+
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Desarrollo y mantenimiento de funcionalidades
+                            en ADempiere 3.9.4 utilizando Java y PostgreSQL.
+                        </li>
+
+                        <li>
+                            Implementación y ajuste de procesos,
+                            callouts, Model Validators, lógica de negocio
+                            y configuraciones del Application Dictionary.
+                        </li>
+
+                        <li>
+                            Desarrollo y optimización de consultas y
+                            funciones SQL, diagnóstico de errores y análisis
+                            de incidencias en ambientes DEV, QA y Producción.
+                        </li>
+
+                        <li>
+                            Creación y modificación de reportes con
+                            JasperReports/JRXML y procesos de importación
+                            desde Excel y XML.
+                        </li>
+
+                        <li>
+                            Mantenimiento de aplicaciones PHP/Laravel
+                            y trabajo colaborativo utilizando Git y GitHub.
+                        </li>
+
+                    </ul>
+
+                </article>
+
+            </div>
+
+
+            <!-- Experiencia anterior -->
+
+            <div class="secondary-experience">
+
+                <article class="small-card">
+                    <h3>Ejecutivo de Ventas</h3>
+                    <span class="company">Claro Chile</span>
+                    <span class="date">Enero 2025</span>
+                </article>
+
+                <article class="small-card">
+
+                    <h3>Soporte Técnico</h3>
+
+                    <span class="company">
+                        Sináptica SA
+                    </span>
+
+                    <span class="date">
+                        Febrero 2020 - Mayo 2020
+                    </span>
+
+                    <p>
+                        Atención al cliente y resolución de problemas
+                        técnicos para bots de mensajería.
+                    </p>
+
+                </article>
+
+                <article class="small-card">
+
+                    <h3>Vendedor Coordinador</h3>
+
+                    <span class="company">
+                        Gamesol Spa
+                    </span>
+
+                    <span class="date">
+                        Marzo 2016 - Marzo 2018
+                    </span>
+
+                </article>
+
+                <article class="small-card">
+
+                    <h3>Vendedor Reponedor</h3>
+
+                    <span class="company">
+                        Jumbo La Florida
+                    </span>
+
+                    <span class="date">
+                        Marzo 2014 - Febrero 2015
+                    </span>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Tecnologías -->
+    <section id="Tecnologias"
+             class="section section-white">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Tecnologías
+            </h2>
+
+            <p class="section-subtitle">
+                Tecnologías y herramientas con las que
+                he trabajado y desarrollado proyectos.
+            </p>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+
+                    <h3>Backend / ERP</h3>
+
+                    <div class="tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">ADempiere</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">Laravel</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express</span>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <h3>Frontend</h3>
+
+                    <div class="tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Vite</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Bootstrap</span>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <h3>Datos y reportería</h3>
+
+                    <div class="tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">JasperReports</span>
+                        <span class="tag">JRXML</span>
+                        <span class="tag">DBeaver</span>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <h3>Herramientas</h3>
+
+                    <div class="tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">Eclipse</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Tomcat</span>
+                        <span class="tag">Jaspersoft Studio</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Educación -->
+    <section id="Mis-estudios"
+             class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Educación
+            </h2>
+
+            <p class="section-subtitle">
+                Formación académica y especialización
+                en desarrollo de software.
+            </p>
+
+            <div class="education-grid">
+
+                <article class="education-card">
+
+                    <h3>
+                        Desarrollador Full Stack
+                    </h3>
+
+                    <p class="institution">
+                        Desafío Latam
+                    </p>
+
+                    <span class="date">
+                        2024 - 2025
+                    </span>
+
+                </article>
+
+
+                <article class="education-card">
+
+                    <h3>
+                        Tecnólogo en Informática Biomédica
+                    </h3>
+
+                    <p class="institution">
+                        Duoc UC
+                    </p>
+
+                    <span class="date">
+                        2015 - 2020
+                    </span>
+
+                </article>
+
+
+                <article class="education-card">
+
+                    <h3>
+                        Dibujante Técnico
+                    </h3>
+
+                    <p class="institution">
+                        Liceo Industrial Italia
+                    </p>
+
+                    <span class="date">
+                        2009 - 2012
+                    </span>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contacto -->
+    <section id="Contacto">
+
+        <h2>
+            Contacto
+        </h2>
+
+        <p>
+            Si quieres conocer más sobre mi experiencia,
+            proyectos o perfil profesional, puedes contactarme
+            directamente.
+        </p>
+
+        <div class="contact-links">
+
+            <a href="mailto:Alan.varasg@gmail.com"
+               class="contact-link">
+                Email
+            </a>
+
+            <a href="https://github.com/AlanMayron"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact-link">
+                GitHub
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Alan Mayron Nolasco Varas Gatica.
+            Todos los derechos reservados.
+        </p>
+
+    </footer>
 
 </body>
 
